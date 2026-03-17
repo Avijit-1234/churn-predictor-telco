@@ -139,11 +139,11 @@ elif page == "Inference Engine":
 
         prediction = model.predict(input_df)[0]
         probability = model.predict_proba(input_df)[0][1]
-        
+
         st.markdown("### Inference Result:")
         if prediction == 1:
-            st.error(f"**HIGH RISK DETECTED** \n\n Predicted Churn Risk: {probability:.1%}")
+            st.error(f"HIGH RISK DETECTED (Probability: {probability:.1%})")
             st.progress(float(probability))
         else:
-            st.success(f"**RETENTION LIKELY** \n\n Predicted Churn Risk: {probability:.1%}")
+            st.success(f"RETENTION LIKELY (Probability: {probability:.1%})")
             st.progress(float(probability))
