@@ -4,6 +4,11 @@ A machine learning web application that predicts the likelihood of a telecommuni
 
 **🔴 Live Dashboard:** [churn-predictor-telco.streamlit.app](https://churn-predictor-telco.streamlit.app/)
 
+<p align="center">
+  <img src="assets/img01.png" width="48%" alt="Input Dashboard">
+  <img src="assets/img02.png" width="48%" alt="Inference Result">
+</p>
+
 ---
 
 ## 🛠️ Tech Stack
