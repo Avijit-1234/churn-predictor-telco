@@ -45,6 +45,7 @@ st.sidebar.code("""
 • Frontend: Streamlit
 """, language="markdown")
 
+
 # ==========================================
 # PAGE 1: DATA ANALYTICS
 # ==========================================
@@ -78,6 +79,7 @@ if page == "Data & Analytics":
         fig2, ax2 = plt.subplots(figsize=(6, 4))
         sns.heatmap(num_cols.corr(), annot=True, cmap='coolwarm', fmt=".2f", ax=ax2, cbar=False)
         st.pyplot(fig2)
+
 
 # ==========================================
 # PAGE 2: CHURN PREDICTION (INFERENCE)
