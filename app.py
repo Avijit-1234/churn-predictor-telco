@@ -142,8 +142,8 @@ elif page == "Inference Engine":
 
         st.markdown("### Inference Result:")
         if prediction == 1:
-            st.error(f"HIGH RISK DETECTED (Probability: {probability:.1%})")
+            st.error(f"HIGH RISK DETECTED\n(Probability of churn: {probability:.1%})")
             st.progress(float(probability))
         else:
-            st.success(f"RETENTION LIKELY (Probability: {probability:.1%})")
+            st.success(f"RETENTION LIKELY\n(Probability of churn: {probability:.1%})")
             st.progress(float(probability))
